@@ -34,6 +34,7 @@ describe('Validate the functionality for checkboxex and radiobuttons',()=>{
         // })
 
         // cy.get('#radio-buttons input[value="green"]').check().should('be.checked')
+        // cy.get('#radio-buttons input[value="blue"]').check().should('be.checked')
 
         cy.get('#radio-buttons').children().filter('input').each(el=>{
             cy.wrap(el).check().should('be.checked')
