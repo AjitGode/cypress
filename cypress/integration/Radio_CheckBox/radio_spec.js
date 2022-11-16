@@ -18,7 +18,7 @@ describe('verify the functionality of radio buttons and checkbox',()=>{
     })
 
     it('verify the functionality of checkbox using click method',()=>{
-        //check
+        //click
         cy.get('[value="red"]').click().should('be.checked')
         cy.get('[value="yellow"]').check().should('be.checked')
         cy.get('[value="blue"]').click().should('be.checked')
