@@ -17,12 +17,13 @@ describe('Verify status code of API',()=>{
             method:"POST",
             url:"https://reqres.in/api/users",
             body:{
-                name: "Ajit G",
+                name: null,
                 job: "Frontend Developer"
             }
         }).then((res)=>{
-            // cy.log(res)
-            expect(res.status).to.equal(200)
+            cy.log(res)
+            //expect(res.status).to.equal(200)
+            expect(res.body.name).not.to.be.null
         })
     })
 
@@ -40,7 +41,7 @@ describe('Verify status code of API',()=>{
         })
     })
 
-    it.only('Verify the status code of DELETE API',()=>{
+    it('Verify the status code of DELETE API',()=>{
         cy.request({
             method:"DELETE",
             url:"https://reqres.in/api/users/327",
