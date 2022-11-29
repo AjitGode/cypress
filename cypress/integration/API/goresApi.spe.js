@@ -17,7 +17,7 @@ describe('Verify the gores APIs',()=>{
             method:"GET",
             url:"https://gorest.co.in/public/v2/users",
             headers:{
-                Authorization:"Bearer abe6f14ed90582adb77fd14c315afcde567e5c9e46f1d5475d5127ba0262b345"
+                
             }
         }).then((res)=>{
             // cy.log(res)
@@ -32,7 +32,7 @@ describe('Verify the gores APIs',()=>{
             url:"https://gorest.co.in/public/v2/users",
             body:data,
             headers:{
-                Authorization:"Bearer abe6f14ed90582adb77fd14c315afcde567e5c9e46f1d5475d5127ba0262b345"
+                
             }
         }).then((res)=>{
             expect(res.status).to.equal(201)
@@ -46,7 +46,7 @@ describe('Verify the gores APIs',()=>{
             url:"https://gorest.co.in/public/v2/users/2100",
             body:data2,
             headers:{
-                Authorization:"Bearer abe6f14ed90582adb77fd14c315afcde567e5c9e46f1d5475d5127ba0262b345"
+                
             }
         }).then((res)=>{
             expect(res.status).to.equal(200)
@@ -58,7 +58,7 @@ describe('Verify the gores APIs',()=>{
             method:"DELETE",
             url:"https://gorest.co.in/public/v2/users/2100",
             headers:{
-                Authorization:"Bearer abe6f14ed90582adb77fd14c315afcde567e5c9e46f1d5475d5127ba0262b345"
+               
             }
         }).then((res)=>{
             expect(res.status).to.equal(204)
