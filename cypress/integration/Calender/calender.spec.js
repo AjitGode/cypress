@@ -36,7 +36,8 @@ describe('Verify the calender functionality', () => {
         getMonthYear()
 
         function getDate(){
-            cy.get('.day').contains(day).click()
+            // cy.get('.day').contains(day).click()
+            cy.contains(day).click()
         }
         getDate()
     })
