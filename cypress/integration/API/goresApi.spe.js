@@ -56,7 +56,7 @@ describe('Verify the gores APIs',()=>{
     it.only('Verify the Delete User',()=>{
         cy.request({
             method:"DELETE",
-            url:"https://gorest.co.in/public/v2/users/2100",
+            url:"https://gorest.co.in/public/v2/users/2101",
             headers:{
                
             }
