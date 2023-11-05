@@ -6,7 +6,7 @@ describe('Create update delete user', () => {
             method: "POST",
             url: "https://gorest.co.in/public/v2/users",
             body: {
-                name: "Tenali Ramakrishna",
+                name: "Tenali Ramakrishnan",
                 gender: "male",
                 email: `xyz${Math.random() * 6}@gmail.com`,
                 status: "active"

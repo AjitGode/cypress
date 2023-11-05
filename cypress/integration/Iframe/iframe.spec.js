@@ -1,8 +1,10 @@
 /// <reference types="cypress" />
 
 describe('validate the iframe functionality',()=>{
-    it('Validate ifrmae with jquery method',()=>{
+    beforeEach(()=>{
         cy.visit('http://www.webdriveruniversity.com/IFrame/index.html')
+    })
+    it('Validate ifrmae with jquery method',()=>{
         cy.get('#frame').then((el)=>{
             //cy.log(el)
             let body = el.contents().find('body')
@@ -12,7 +14,6 @@ describe('validate the iframe functionality',()=>{
     })
 
     it.only('validate iframe with javascript functionality',()=>{
-        cy.visit('http://www.webdriveruniversity.com/IFrame/index.html')
         cy.get('#frame').then((el)=>{
            // cy.log(el)
 
